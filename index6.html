@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <br>
+     <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .carlist{
+            background-color: orange;
+            width: 200px;
+        }
+        form{
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+        }
+        #forminfo{
+            width: 100%;
+            height: 23px;
+        }
+        textarea{
+            width: 100%;
+        }
+        button{
+            color: white;
+            border: 0px;
+            width: 130px;
+            height: 30px;
+            margin-top: 13px;
+            border-radius: 15px;
+        }
+
+        @media only screen and (max-width:800px){
+
+            img{
+                display: none;
+            }
+            form{
+                width: 1oo%;
+            }
+            h1{
+                background-color: cyan;
+            }
+
+        }
+
+        body{
+            background-image: url(./image/sam.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>My picture</h1>
+    <br> <img src="image/sam.jfif" height="300px" width="200px">
+    <h1>Introduction to Myself</h1>
+    <p>My name is mr ricky. <br>I am a level 100 student at YIBS 
+        <br> I aspire to becoming a great developer in the future</p>
+    <h1>List of fruits</h1>
+    <ul>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Cherry</li>
+    </ul>
+    <h1>List of cars</h1>
+    <ol>
+        <li>Toyota</li>
+        <li>Benz</li>
+        <li>Corola</li>
+    </ol>
+    <table>
+        <tr>
+            <th>CLUB</th>
+            <th>PLAYERS</th>
+        </tr>
+        <tr>
+            <td>Manchester City</td>
+            <td>Foden</td>
+        </tr>
+        <tr>
+            <td>Real Madrid</td>
+            <td>Bellingham</td>
+        </tr>
+        <tr>
+            <td>Fc Barcelona</td>
+            <td>Yamal</td>
+        </tr>
+    </table> <br>
+    <a href="http://127.0.0.1:5501/LYRICS.html">Lyrics.com</a>
+    <h1>This is your LOGIN form </h1>
+
+
+    <form action="">
+        <label for="">USER NAME:</label>
+        <input type="text"  id="forminfo" name="names" required> <br>
+        <label for="">Email:</label>
+        <input type="email"  id="forminfo" name="email" required> <br>
+        <label for="">Phone number:</label>
+        <input type="number" id="forminfo" name="Phone number" required> <br>
+        <label for="">Address:</label>
+        <input type="text"  id="forminfo" name="names" required> <br>
+         <label for="">Gender:</label>
+
+
+         
+    <span>Male</span> <input type="radio"name="Gender">
+    <span>Female</span><input type="radio" name="Gender"> <br>
+    <label for="">Select Profession:</label>
+    <select name="Profession" id="">
+        <option value="Doctor">Doctor</option>
+        <option value="Pilot">Pilot</option>
+        <option value="Developer">Developer</option>
+    </select><br>
+    <label for="">Choose Hobbies</label><br>
+    <span>Football</span><input value="Football" type="checkbox">
+    <span>swimming</span><input value="Programming" type="checkbox">
+    <span>dancing</span><input value="singing" type="checkbox"><br>
+    <label for="">Describe yourself</label><br>
+    <textarea name=""  cols="50" rows="5"></textarea><br>
+    <label for="">Upload image</label>
+    <input type="file" accept="image/png,jpg"required><br>
+
+    <button style="background-color: red; ">Enter</button>
+
+
+    </form>
+    
+    <video src="./videos/Ric.mp4" controls autoplay muted height="500px" width="500px"></video>
+
+<script src="./test.js"></script>
+
+</body>
+</html>
